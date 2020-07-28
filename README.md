@@ -1,29 +1,25 @@
 # Dart Programming
-> 
+>  mathematical formulas such as natural logarithms log and power pow -> dart:math
 ```
 import 'dart:math';
 
 void main() {
 
-		var n = 0;
+  var n = 0;
 
-		print("The number of rabbits increases as:\n");
+  print("The number of rabbits increases as:\n");
 
-		for (int years = 0; years <= 10; years++) {
+  for (int years = 0; years <= 10; years++) {
 
-			n = (2 * pow(e, log(15) * years)).round().toInt();
+    n = (2 * pow(e, log(15) * years)).round().toInt();
 
-			print("After $years years:\t $n animals");
+    print("After $years years:\t $n animals");
 
-	}
+  }
 }
-
-int calculateRabbits(){
-	retur 
-}
-
 ```
-> Function
+
+> Extracting a function
 ```
 import 'dart:math';
 
@@ -36,10 +32,13 @@ void main() {
   print("The number of rabbits increases as:\n");
 
   for (int years = 0; years <= NO_YEARS; years++) {
+
     rabbitCount = calculateRabbits(years);
+
     print("After $years years:\t $rabbitCount animals");
+
   }
-  
+
 }
 
 int calculateRabbits(int years) {
