@@ -18,8 +18,7 @@ void main() {
   }
 }
 ```
-
-> Extracting a function
+# Extracting a function
 ```
 import 'dart:math';
 
@@ -112,6 +111,41 @@ main() {
       print("Which eastern country do you want to visit?");
       break;
   }
+  
+}
+```
+# Anonymous functions (lambda, closure)
+```
+void main() {
+
+  var list = [1, 2, 3, 4];
+  list.forEach((number) => print('hello $number'));
+
+}
+```
+# Lexical scope
+```
+globalFunction() {
+  
+  print("global/top-level function");
+  
+}
+
+simpleFunction() {
+  
+  print("simple function");
+  
+  globalFunction() {
+    print("Not really global");
+  }
+
+  globalFunction();
+}
+
+main() {
+  
+  simpleFunction();
+  globalFunction();
   
 }
 ```
